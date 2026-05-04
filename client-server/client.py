@@ -1,3 +1,5 @@
+import zmq
+
 def client():
   context = zmq.Context()
   socket  = context.socket(zmq.REQ)       # create request socket
