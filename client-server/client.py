@@ -7,3 +7,5 @@ def client():
   message = socket.recv()                 # block until response
   socket.send(b"STOP")                    # tell server to stop
   print(message.decode())                 # print result
+
+client()

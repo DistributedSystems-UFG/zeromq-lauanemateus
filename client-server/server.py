@@ -12,3 +12,5 @@ def server():
       socket.send(reply.encode())         # send it away (encoded)
     else:                         
       break                               # break out of loop and end
+
+server()
