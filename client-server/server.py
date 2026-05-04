@@ -1,9 +1,10 @@
 import zmq
+from constMP import *
 
 def server():
   context = zmq.Context()
   socket  = context.socket(zmq.REP)       # create reply socket
-  socket.bind("tcp://*:5679")            # bind socket to address
+  socket.bind(f"tcp://*:{PORT}")            # bind socket to address
 
   while True:
     message = socket.recv()               # wait for incoming message
