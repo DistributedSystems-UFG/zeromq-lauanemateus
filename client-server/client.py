@@ -1,5 +1,5 @@
 import zmq
-from constMP import *
+from const import *
 
 def client():
   context = zmq.Context()

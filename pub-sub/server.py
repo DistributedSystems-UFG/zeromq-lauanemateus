@@ -1,4 +1,4 @@
-from constMP import *
+from const import *
 
 import multiprocessing
 import zmq, time
