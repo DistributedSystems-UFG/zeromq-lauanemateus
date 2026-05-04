@@ -1,4 +1,5 @@
 from const import *
+import zmq
 
 def client():
   context = zmq.Context()
