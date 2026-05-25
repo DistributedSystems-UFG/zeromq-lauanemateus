@@ -6,7 +6,7 @@ NWORKERS = 2 #-
 def producer():
   context = zmq.Context()              
   socket  = context.socket(zmq.PUSH)      # create a push socket
-  socket.bind("tcp://127.0.0.1:12345")    # bind socket to address
+  socket.bind(f"tcp://*:{PORT1}")    # bind socket to address
   
   while True:
     workload = random.randint(1, 100)     # compute workload
